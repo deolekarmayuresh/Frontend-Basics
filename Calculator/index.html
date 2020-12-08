@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h2>My Calculator</h2>
+    <table>
+        <tr>
+            <td colspan="4">
+                <input type="text" name="display" id="display">
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" name="seven" value="7" onclick="display.value +='7'"></td>
+            <td><input type="button" name="eight" value="8" onclick="display.value +='8'"></td>
+            <td><input type="button" name="nine" value="9" onclick="display.value +='9'"></td>
+            <td><input type="button" name="multiply" class="operator" value="x" onclick="display.value +='*'"></td>
+        </tr>
+        <tr>
+            <td><input type="button" name="four" value="4" onclick="display.value +='4'"></td>
+            <td><input type="button" name="five" value="5" onclick="display.value +='5'"></td>
+            <td><input type="button" name="six" value="6" onclick="display.value +='6'"></td>
+            <td><input type="button" name="minus" class="operator" value="-" onclick="display.value +='-'"></td>
+        </tr>
+        <tr>
+            <td><input type="button" name="one" value="1" onclick="display.value +='1'"></td>
+            <td><input type="button" name="two" value="2" onclick="display.value +='2'"></td>
+            <td><input type="button" name="three" value="3" onclick="display.value +='3'"></td>
+            <td><input type="button" name="add" class="operator" value="+" onclick="display.value +='+'"></td>
+        </tr>
+        <tr>
+            <td><input type="button" name="clear" value="c" onclick="display.value =' '"></td>
+            <td><input type="button" name="zero" value="0" onclick="display.value +='0'"></td>
+            <td><input type="button" name="equal" value="=" onclick="display.value = eval(display.value)"></td>
+            <td><input type="button" name="divide" class="operator" value="/" onclick="display.value +='/'"></td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
